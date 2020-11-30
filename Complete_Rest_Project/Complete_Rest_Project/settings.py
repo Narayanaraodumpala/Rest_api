@@ -100,7 +100,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 REST_FRAMEWORK = {
-    'USER_DETAILS_SERIALIZER':'app1.serializers.UserdetailSerializer'
+    'USER_DETAILS_SERIALIZER':'app1.serializers.UserDetailSerializer'
 }
 
 
@@ -123,3 +123,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 AUTH_USER_MODEL='app1.User'
+ACCOUNT_EMAIL_REQUIRED = False
